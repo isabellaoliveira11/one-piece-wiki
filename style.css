@@ -1,0 +1,134 @@
+/* Estilos gerais para a seção hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    padding: 50px 100px; /* Ajuste o espaço conforme necessário */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.hero-content .logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0;
+    color: #333;
+}
+
+.hero-content p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.theme-buttons {
+    margin-top: 20px;
+}
+
+.theme-buttons button {
+    width: 76px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+#light-theme {
+    background-color: #fff;
+}
+
+#dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Imagem do Luffy */
+.hero-image {
+    max-width: 40%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Estilos de layout de grid */
+.search-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.characters-grid {
+    padding: 20px;
+}
+
+.movies-grid {
+    padding: 20px;
+}
+
+/* Outros estilos */
+#lista-personagens, #lista-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 100px; /* Substitui margin por padding */
+    box-sizing: border-box;
+}
+
+.div-personagem, .div-filme {
+    width: calc(25% - 12px);
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fff;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin: 6px;
+    box-sizing: border-box;
+}
+
+.div-personagem img, .div-filme img {
+    width: 204px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.div-personagem h2, .div-filme h3 {
+    margin-top: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.div-personagem p, .div-filme p {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.div-personagem:hover, .div-filme:hover {
+    background-color: #f0f0f0;
+}

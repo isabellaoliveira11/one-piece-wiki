@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki One Piece</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="logo">
+                <img src="assets/logo-onepiece.png" alt="One Piece Logo" width="100px"> <!-- Altere para o caminho correto da logo -->
+            </div>
+            <div class="text-content">
+                <h1>Saiba tudo em um só lugar.</h1>
+                <p>Personagens, localizações, episódios e muito mais.</p>
+                <div class="theme-buttons">
+                    <button id="light-theme">Tema Claro</button>
+                    <button id="dark-theme">Tema Escuro</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/luffy.png" alt="Luffy" class="luffy-image">
+        </div>
+    </header>
+
+    <section class="search-section">
+      <input type="text" id="search-input" placeholder="Personagem...">
+    </section>
+
+    <section class="characters-grid">
+        <div id="lista-personagens"></div>
+    </section>
+
+    <section class="movies-grid">
+      <h2>Filmes de One Piece</h2>
+      <div id="lista-filmes"></div>
+    </section>
+
+    <script src="app.js"></script>
+    <script src="movies.js" type="module"></script>
+</body>
+</html>
