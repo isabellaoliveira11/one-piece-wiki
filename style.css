@@ -1,134 +1,382 @@
-/* Estilos gerais para a seção hero */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0f0f0; /* Cor de fundo cinza claro */
-    padding: 50px 100px; /* Ajuste o espaço conforme necessário */
-}
+/* ========================================================================== 
+    Estilos gerais para a seção cabeçalho principal (cabeçalho estilo Netflix)
+    ========================================================================== */
+    .cabecalho-principal {
+        position: relative;
+        background-color: #e96d6d;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: black;
+        padding: 20px 120px;
+    }
+    
+    .imagem-luffy {
+        width: 20%;
+    }
+    
+    .imagem-luffy img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .conteudo-cabecalho {
+        position: relative;
+        z-index: 2;
+        padding: 20px;
+        max-width: 40%;
+    }
+    
+    .conteudo-cabecalho h1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        margin-top: 20px;
+        color: black;
+    }
+    
+    .conteudo-cabecalho p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 10px;
+        color: black;
+    }
+    
+    .botoes-tema {
+        margin-top: 20px;
+    }
+    
+    .cabecalho-secao {
+        display: flex;
+        align-items: center;
+        padding: 20px 100px;
+    }
+    
+    .cabecalho-secao h2 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        margin-right: 50px; /* Adiciona 50px de espaçamento à direita do título */
+    }
+    
+    .botoes-tema button {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    #tema-claro {
+        background-color: #fff;
+        color: #000;
+    }
+    
+    #tema-escuro {
+        background-color: #333;
+        color: #fff;
+    }
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 50%;
-}
-
-.hero-content .logo {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-}
-
-.hero-content h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    margin: 0;
-    color: #333;
-}
-
-.hero-content p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #666;
-    margin-top: 10px;
-}
-
-.theme-buttons {
-    margin-top: 20px;
-}
-
-.theme-buttons button {
-    width: 76px;
-    height: 32px;
-    border-radius: 16px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-}
-
-#light-theme {
-    background-color: #fff;
-}
-
-#dark-theme {
-    background-color: #333;
-    color: #fff;
-}
-
-/* Imagem do Luffy */
-.hero-image {
-    max-width: 40%;
-}
-
-.hero-image img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/* Estilos de layout de grid */
-.search-section {
-    padding: 20px;
-    text-align: center;
-}
-
-.characters-grid {
-    padding: 20px;
-}
-
-.movies-grid {
-    padding: 20px;
-}
-
-/* Outros estilos */
-#lista-personagens, #lista-filmes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 0 100px; /* Substitui margin por padding */
-    box-sizing: border-box;
-}
-
-.div-personagem, .div-filme {
-    width: calc(25% - 12px);
-    height: 300px;
-    border: 1px solid #ddd;
-    padding: 15px;
-    background-color: #fff;
-    text-align: left;
-    cursor: pointer;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    margin: 6px;
-    box-sizing: border-box;
-}
-
-.div-personagem img, .div-filme img {
-    width: 204px;
-    height: 150px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.div-personagem h2, .div-filme h3 {
-    margin-top: 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.div-personagem p, .div-filme p {
-    font-size: 0.8em;
-    color: #666;
-    margin-bottom: 3px;
-}
-
-.div-personagem:hover, .div-filme:hover {
-    background-color: #f0f0f0;
-}
+    
+    /* ========================================================================== 
+        Botão "Ver todos" com imagem
+        ========================================================================== */
+    
+        #ver-todos-personagens,
+        #ver-todos-localizacoes {
+            width: 105px;
+            height: 32px;
+            padding: 5px 10px 5px 30px;
+            background-color: transparent;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            position: relative;
+            white-space: nowrap; /* Impede a quebra de linha */
+        }
+        
+        #ver-todos-personagens::before,
+        #ver-todos-localizacoes::before {
+            content: "";
+            background-image: url('assets/DarkSquaresFour.svg');
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        #ver-todos-personagens:hover,
+        #ver-todos-localizacoes:hover {
+            background-color: #bf2929;
+            color: white;
+            border-radius: 36px;
+        }
+    
+    /* ========================================================================== 
+        Estilos Pesquisa
+        ========================================================================== */
+    .container-pesquisa {
+        display: flex; /* Alinha os elementos horizontalmente */
+        align-items: center; /* Alinha os elementos verticalmente */
+        padding: 20px 100px;
+    }
+    
+    #pesquisa-personagens {
+        width: 280px;
+        height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 32px;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-right: 10px; /* Adiciona espaço entre o input e o botão */
+    }
+    
+    /* ========================================================================== 
+        Estilos das seções de personagens
+        ========================================================================== */
+        #lista-personagens {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 0 100px;
+            box-sizing: border-box;
+        }
+        
+        /* Card de Personagens */
+        .div-personagem {
+            width: calc(25% - 12px);
+            height: 300px;
+            padding: 15px;
+            background-color: #F9F9F9;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            margin: 6px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative; /* Adicionado para posicionamento absoluto dos elementos internos */
+        }
+        
+        .div-personagem img {
+            width: 204px;
+            height: 150px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            align-self: center;
+            object-fit: cover;
+        }
+        
+        .div-personagem h2 {
+            margin-top: 0;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        
+        .div-personagem p {
+            font-size: 0.8em;
+            color: #666;
+            margin-bottom: 3px;
+            text-align: left;
+        }
+        
+        .div-personagem:hover {
+            background-color: #F1F1F1;
+        }
+        
+        /* Estilos para o ícone de coração */
+        .icone-coracao {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 24px; /* Ajuste o tamanho conforme necessário */
+            height: 24px; /* Ajuste o tamanho conforme necessário */
+        }
+        
+        /* Estilos para o botão "Saiba Mais" */
+        .botao-saiba-mais {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #F9F9F9; /* Cor de fundo alterada */
+            color: black; /* Cor do texto alterada para preto (para melhor contraste) */
+            padding: 8px 15px;
+            border-radius: 36px; /* Borda arredondada alterada */
+            border: 1px solid transparent; /* Borda transparente por padrão */
+            cursor: pointer;
+            transition: border 0.3s ease; /* Transição suave para a borda */
+        }
+        
+        .botao-saiba-mais:hover {
+            border: 1px solid black; /* Borda preta ao passar o mouse */
+        }
+    /* ========================================================================== 
+        Estilos Localização 
+        ========================================================================== */
+  /* ========================================================================== 
+    Estilos Localização 
+    ========================================================================== */
+/* ========================================================================== 
+    Estilos Localização 
+    ========================================================================== */
+    .secao-localizacoes {
+        padding: 20px 100px;
+    }
+    
+    .cabecalho-secao-localizacoes {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .cabecalho-secao-localizacoes h2 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        margin-right: 50px;
+    }
+    
+    #lista-localizacoes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .div-localizacao {
+        width: 147px;
+        height: 190px;
+        padding: 15px;
+        background-color: #fff;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        margin: 6px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+    
+    .div-localizacao img {
+        width: 100%;
+        height: 120px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+    
+    .div-localizacao h2 {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 5px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 5px;
+    }
+    
+    .div-localizacao p {
+        font-size: 0.8em;
+        color: #666;
+        margin-bottom: 10px; /* Aumentei o espaçamento abaixo do nome do mar */
+        text-align: center;
+    }
+    
+    .div-localizacao::before {
+        content: "";
+        background-image: url('assets/pin.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    
+    .div-localizacao:hover {
+        background-color: #F1F1F1;
+    }
+    
+    .botao-saiba-mais-localizacao {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #007bff;
+        color: white;
+        padding: 5px 10px; /* Reduzi o padding do botão */
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap; /* Impede que o texto do botão quebre a linha */
+        font-size: 0.9em; /* Reduzi o tamanho da fonte do botão */
+    }
+    /* ========================================================================== 
+        Estilos responsivos
+        ========================================================================== */
+    
+    @media (max-width: 768px) {
+        .cabecalho-principal {
+            padding: 30px;
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .conteudo-cabecalho {
+            max-width: 100%;
+        }
+    
+        #lista-personagens,
+        #lista-localizacoes {
+            padding: 0 20px;
+        }
+    
+        .div-personagem,
+        .div-localizacao {
+            width: calc(50% - 12px);
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .div-personagem,
+        .div-localizacao {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .cabecalho-secao {
+            flex-direction: column;
+            align-items: flex-start; /* Mantém alinhamento na esquerda em telas menores */
+        }
+    }

@@ -1,0 +1,214 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .header-round-button:hover {
+    background-color: #555;
+}
+header {
+    text-align: left;
+    position: relative;
+    width: 1150px;
+    height: 80px; /* Altura ajustada para 80px */
+    margin-left: 146px;
+    margin-right: 146px;
+    display: flex;
+    align-items: center;
+}
+.header-home-button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer; /* Adicionado para exibir a mãozinha */
+    display: flex;
+    align-items: center;
+}
+
+.header-home-image {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.header-round-button:hover,
+.header-home-button:hover {
+    background-color: #f0f0f0;
+}
+
+.header-round-button {
+    background-color: transparent;
+    border: none;
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: 30px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Torna o botão redondo */
+    padding: 0;
+    margin: 0 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-round-image {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: 20px; /* Ajuste o tamanho conforme necessário */
+}
+
+.header-round-button:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}
+
+header img {
+    position: static;
+    top: auto;
+}
+
+.header-buttons {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.informacoes-personagem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: static; /* Removido o posicionamento absoluto */
+    left: auto; /* Removido o posicionamento à esquerda */
+    width: auto; /* Largura automática para ocupar o espaço disponível */
+    height: 400px; /* Altura ajustada para 800px */
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.imagem-personagem img {
+    width: 269px;
+    height: 391px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.detalhes-personagem {
+    margin-left: 50px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.mais-personagens {
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 0; /* Removida a margem superior */
+}
+#lista-personagens-relacionados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.div-personagem {
+    width: 250px; /* Largura ajustada para 250px */
+    height: 350px; /* Altura ajustada para 350px */
+    padding: 15px;
+    background-color: #F9F9F9;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+
+
+.div-personagem img {
+    width: 204px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    object-fit: cover;
+}
+
+.div-personagem h2 {
+    margin-top: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.div-personagem p {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.div-personagem:hover {
+    background-color: #F1F1F1;
+}
+
+#paginacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao-pagina {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.botao-pagina:hover {
+    border-color: black;
+}
+
+.pagina-atual {
+    border-color: black;
+    background-color: #B5342F;
+    color: white;
+}
+
+.pontos-pagina {
+    margin: 0 5px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}

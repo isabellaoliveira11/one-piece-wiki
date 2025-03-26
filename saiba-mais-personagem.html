@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiba Mais - Personagem</title>
+    <link rel="stylesheet" href="saiba-mais-personagem.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <img src="assets/One-Piece-Logo.png" alt="Logotipo One Piece" width="100">
+        <nav class="header-buttons">
+            <button class="header-home-button" onclick="window.location.href='index.html'">
+                <img src="assets/DarkHouseSimple.svg" alt="Casa Escura" class="header-home-image">
+                <span>Início</span>
+            </button>
+            <button class="header-round-button" id="lua-button">
+                <img src="assets/DarkMoon.svg" alt="Lua Escura" class="header-round-image">
+            </button>
+            <button class="header-round-button" id="sol-button">
+                <img src="assets/DarkSun.svg" alt="Sol Escuro" class="header-round-image">
+            </button>
+        </nav>
+    </header>
+    <section class="informacoes-personagem">
+        <div class="imagem-personagem">
+            <img id="imagem-personagem" src="" alt="">
+        </div>
+        <div class="detalhes-personagem">
+            <h1 id="nome-personagem"></h1>
+            <p id="trabalho-personagem"></p>
+            <p id="altura-personagem"></p>
+        </div>
+    </section>
+    <hr>
+    <section class="mais-personagens">
+        <h2>Mais Personagens</h2>
+        <div id="lista-personagens-relacionados"></div> 
+        <div id="paginacao"></div>
+    </section>
+    <script src="saiba-mais-personagem.js"></script>

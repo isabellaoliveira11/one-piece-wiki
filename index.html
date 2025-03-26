@@ -8,39 +8,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <div class="logo">
-                <img src="assets/logo-onepiece.png" alt="One Piece Logo" width="100px"> <!-- Altere para o caminho correto da logo -->
+    <header class="cabecalho-principal">
+        <div class="conteudo-cabecalho">
+            <div class="logotipo">
+                <img src="assets/One-Piece-Logo.png" alt="Logotipo One Piece" width="100">
             </div>
-            <div class="text-content">
+            <div class="conteudo-texto">
                 <h1>Saiba tudo em um só lugar.</h1>
                 <p>Personagens, localizações, episódios e muito mais.</p>
-                <div class="theme-buttons">
-                    <button id="light-theme">Tema Claro</button>
-                    <button id="dark-theme">Tema Escuro</button>
+                <div class="botoes-tema">
+                    <button id="tema-claro">Claro</button>
+                    <button id="tema-escuro">Escuro</button>
                 </div>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="assets/luffy.png" alt="Luffy" class="luffy-image">
+        <div class="imagem-luffy">
+            <img src="assets/luffyhero.png" alt="Luffy Hero">
         </div>
     </header>
 
-    <section class="search-section">
-      <input type="text" id="search-input" placeholder="Personagem...">
+    <section class="grade-personagens">
+        <div class="container-pesquisa">
+            <input type="text" id="pesquisa-personagens" placeholder="Pesquisar personagens...">
+            <button id="botao-pesquisa">Pesquisar</button>
+        </div>
+        <div class="cabecalho-secao">
+            <div class="conteudo-cabecalho-secao">
+                <h2>Personagens de One Piece</h2>
+            </div>
+            <button id="ver-todos-personagens">Ver Todos</button>
+        </div>
+        <div id="lista-personagens">
+            </div>
     </section>
 
-    <section class="characters-grid">
-        <div id="lista-personagens"></div>
+    <section class="secao-localizacoes">
+        <div class="cabecalho-secao-localizacoes">
+            <div class="conteudo-cabecalho-secao">
+                <h2>Localizações</h2>
+            </div>
+            <button id="ver-todos-localizacoes">Ver Todos</button>
+        </div>
+        <div id="lista-localizacoes"></div>
     </section>
 
-    <section class="movies-grid">
-      <h2>Filmes de One Piece</h2>
-      <div id="lista-filmes"></div>
-    </section>
-
-    <script src="app.js"></script>
-    <script src="movies.js" type="module"></script>
+    <script src="personagens.js"></script>
+    <script src="localizacao.js"></script>
 </body>
 </html>
